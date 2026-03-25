@@ -22,7 +22,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     await bot.change_presence(
-        status=discord.Status.dnd,
+        status=discord.Status.idle,
         activity=discord.Activity(
             type=discord.ActivityType.watching,
             name="the server"
